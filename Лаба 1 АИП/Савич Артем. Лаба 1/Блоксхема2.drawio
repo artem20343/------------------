@@ -1,0 +1,101 @@
+<mxfile host="Electron" modified="2023-09-08T08:05:22.995Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="0fjxQvRvK5HacT4CPAbZ" version="21.6.8" type="device">
+  <diagram name="Страница — 1" id="YixezijRZK-QxlBwWbyj">
+    <mxGraphModel dx="1098" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-1" target="TFB3AuTFI5nxENbIWCNT-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-1" value="Начало программы" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.454;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-2" target="TFB3AuTFI5nxENbIWCNT-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-2" value="Ввод a, b, c, d" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="220" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="167" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-4" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;writeln(&#39;Введите вашу фамилию:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="55" y="240" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="320" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-6" target="TFB3AuTFI5nxENbIWCNT-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-6" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;writeln(&#39;Введите вашу фамилию:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="320" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="55" y="410" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.574;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-8" target="TFB3AuTFI5nxENbIWCNT-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-8" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;writeln(&#39;Введите ваше имя:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="410" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-9" target="TFB3AuTFI5nxENbIWCNT-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="55" y="490" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-10" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;writeln(&#39;Введите ваше отчество:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="55" y="490" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="490" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.414;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-12" target="TFB3AuTFI5nxENbIWCNT-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-12" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;writeln(&#39;Введите номер вашей группы:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="490" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="410" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.673;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-14" target="TFB3AuTFI5nxENbIWCNT-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-14" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp;&lt;/span&gt;writeln(&#39;Введите четыре числа через пробел:&#39;);&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="410" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="415" y="310" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.362;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-16" target="TFB3AuTFI5nxENbIWCNT-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-16" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-ansi-language:EN-US;mso-fareast-language:&lt;br/&gt;RU;mso-no-proof:yes&quot; lang=&quot;EN-US&quot;&gt;&lt;span style=&quot;mso-spacerun:yes&quot;&gt;&amp;nbsp; &lt;/span&gt;sum := a + b + c +d;&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="425" y="310" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-17" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="410" y="150" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endArrow=block;endFill=0;" parent="1" source="TFB3AuTFI5nxENbIWCNT-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="575" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-18" value="&lt;p class=&quot;MsoNormal&quot;&gt;Вывод&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-ansi-language:EN-US;mso-fareast-language:&lt;br/&gt;RU;mso-no-proof:yes&quot; lang=&quot;EN-US&quot;&gt;writeln(&#39;&lt;/span&gt;&lt;span style=&quot;mso-fareast-language:RU;mso-no-proof:yes&quot;&gt;Фамилия&lt;/span&gt;&lt;span style=&quot;mso-ansi-language:EN-US;mso-fareast-language:RU;mso-no-proof:&lt;br/&gt;yes&quot; lang=&quot;EN-US&quot;&gt;: &#39;, ln);&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;background-color: initial;&quot; lang=&quot;EN-US&quot;&gt;writeln(&#39;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Имя&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; lang=&quot;EN-US&quot;&gt;:&#39;, &#39;fn);&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot; lang=&quot;EN-US&quot;&gt;writeln(&#39;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Отчество&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; lang=&quot;EN-US&quot;&gt;: &#39;, mn);&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;writeln(&#39;Номер группы: &#39;, gn);&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;writeln(&#39;Сумма четырех чисел равна: &#39;, sum);&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="150" width="290" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="TFB3AuTFI5nxENbIWCNT-20" value="Конец программмы" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="515" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
