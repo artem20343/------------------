@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from student import Student, byGPA_key
 import random
  

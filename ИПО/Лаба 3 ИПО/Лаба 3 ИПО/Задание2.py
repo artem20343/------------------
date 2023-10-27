@@ -1,12 +1,8 @@
-n = int(input("Введите целое число n (> 1): "))
-
-k = 0
-p = 12
-
-while p <= n:
-    k += 1
-    p *= 2
-
-k -= 1
-
-print("Наибольшее целое число k, при котором 2^k > n: ", k)
+class Stars:
+    def __init__(self, n):
+        self.qty = '*' * n
+        def __add__(self, n):
+            return self.qty + '*' * n
+a=Stars(3)
+b = a + 5
+print(b)

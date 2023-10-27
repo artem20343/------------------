@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from product import Product
 
 # Создаем массив объектов класса Product
@@ -32,5 +31,4 @@ print(f"Товары со сроком хранения больше {shelf_life
 for product in products:
     if product.shelf_life > shelf_life_limit:
         product.print_info()
->>>>>>> ed71ffae37781bd81cd840534a288057e66a6392
         print()
