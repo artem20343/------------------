@@ -1,65 +1,59 @@
 class Rub(object):
-    #Класс для работы с рублями и копейками.
-
+     #Класс для работы с рублями и копейками.
     def __init__(self, rub=0, kop=0):
-        #Инициализация объекта с указанием рублей и копеек.
         self.rub = rub
         self.kop = kop
         self.normalize()
 
     def normalize(self):
-        #Приведение рублей и копеек к нормальному виду (копейки < 100).
+        #Метод для нормализации значений копеек и рублей.
         self.rub += self.kop // 100
         self.kop %= 100
 
     def __str__(self):
-        #Преобразование объекта в строку для вывода.
-        return f'{self.rub:03d}.{self.kop:02d} rub'
+        #Метод для форматированного вывода.
+        return f"{self.rub:02d}.{self.kop:02d} rub"
 
     def __lt__(self, other):
-        #Сравнение двух объектов по стоимости.
+        #Метод для сравнения объектов.
         if self.rub == other.rub:
             return self.kop < other.kop
         return self.rub < other.rub
 
     def __add__(self, other):
-        #Сложение двух объектов.
+        #Метод для сложения объектов.
         res = Rub(self.rub + other.rub, self.kop + other.kop)
         res.normalize()
         return res
 
-
 class Goods(object):
-    #Класс описания товара: название и цена.
-
+     #Класс описания товара: название и цена
     def __init__(self, name='', rub=0, kop=0):
-        #Инициализация объекта товара с указанием названия, рублей и копеек.
         self.name = name
         self.price = Rub(rub, kop)
 
+def process_goods_list(goods_list):
+    #Функция для обработки списка товаров.
+    # Сортировка товаров по цене от дорогих к дешевым
+    sorted_goods = sorted(goods_list, key=lambda x: x.price, reverse=True)
 
-# Считываем данные и создаем список товаров
-goods_list = []
-total_price = Rub()
+    # Вывод товаров
+    for good in sorted_goods:
+        print(f"{good.name} {good.price}")
 
-while True:
-    try:
-        input_line = input()
-        if not input_line:
-            break
-        name, price_str, _ = input_line.split()
-        rub, kop = map(int, price_str.split('.'))
-        goods_list.append(Goods(name, rub, kop))
-        total_price += Rub(rub, kop)
-    except ValueError:
-        print("Некорректный формат ввода.")
+    # Вычисление общей стоимости
+    total_price = Rub()
+    for good in goods_list:
+        total_price += good.price
 
-# Сортируем список товаров по цене
-goods_list.sort(key=lambda goods: goods.price, reverse=True)
+    print(f"\n-----\ntotal {total_price}")
 
-# Выводим отсортированный список товаров и их стоимость
-for goods in goods_list:
-    print(f'{goods.name} {goods.price}')
+# Пример использования
+goods_list = [
+    Goods("rice", 10, 50),
+    Goods("tea", 6, 30),
+    Goods("cake", 10, 12),
+    Goods("salad", 20, 0)
+]
 
-# Выводим общую стоимость обеда
-print(f'Total: {total_price}')
+process_goods_list(goods_list)

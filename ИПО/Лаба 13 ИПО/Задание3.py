@@ -1,37 +1,70 @@
-# Считываем данные и создаем список товаров
-goods_list = []
-total_price = Rub()
+class Rub(object):
+     #Класс для работы с рублями и копейками.
+    def __init__(self, rub=0, kop=0):
+        self.rub = rub
+        self.kop = kop
+        self.normalize()
 
-while True:
-    try:
-        input_line = input()
-        if not input_line:
-            break
-        name, price_str = input_line.split()
-        rub, kop = map(int, price_str.split('.'))
-        goods_list.append(Goods(name, rub, kop))
-        total_price += Rub(rub, kop)
-    except ValueError:
-        print("Некорректный формат ввода.")
+    def normalize(self):
+        #Метод для нормализации значений копеек и рублей.
+        self.rub += self.kop // 100
+        self.kop %= 100
 
-# Сортируем список товаров по цене
-goods_list.sort(key=lambda goods: goods.price, reverse=True)
+    def __str__(self):
+        #Метод для форматированного вывода.
+        return f"{self.rub:02d}.{self.kop:02d} rub"
 
-# Выводим отсортированный список товаров
-for goods in goods_list:
-    print(f'{goods.name} {goods.price}')
+    def __lt__(self, other):
+        #Метод для сравнения объектов.
+        if self.rub == other.rub:
+            return self.kop < other.kop
+        return self.rub < other.rub
 
-# Выводим общую стоимость
-print(f'total {total_price}')
+    def __add__(self, other):
+       # Метод для сложения объектов.
+        res = Rub(self.rub + other.rub, self.kop + other.kop)
+        res.normalize()
+        return res
 
-# Спрашиваем у пользователя, сколько денег он дал
-t = input('tender: ')
-tender_rub, tender_kop = map(int, t.split('.'))
+class Goods(object):
+     #Класс описания товара: название и цена
+    def __init__(self, name='', rub=0, kop=0):
+        self.name = name
+        self.price = Rub(rub, kop)
 
-# Создаем объект для предоставленной суммы
-tender_amount = Rub(tender_rub, tender_kop)
-print(f'tender {tender_amount}')
+def process_goods_list(goods_list):
+    #Функция для обработки списка товаров.
+    # Сортировка товаров по цене от дорогих к дешевым
+    sorted_goods = sorted(goods_list, key=lambda x: x.price, reverse=True)
 
-# Вычисляем и выводим сдачу
-change = tender_amount - total_price
-print(f'change {change}')
+    # Вывод товаров
+    for good in sorted_goods:
+        print(f"{good.name} {good.price}")
+
+    # Вычисление общей стоимости
+    total_price = Rub()
+    for good in goods_list:
+        total_price += good.price
+
+    print(f"\n-----\ntotal {total_price}")
+
+    # Запрос о сдаче
+    tender = float(input("tender: "))
+    tender_rub = int(tender)
+    tender_kop = int((tender - tender_rub) * 100)
+    tender_amount = Rub(tender_rub, tender_kop)
+
+    # Вычисление и вывод сдачи
+    change = tender_amount - total_price
+    print(f"tender {tender_amount}")
+    print(f"change {change}")
+
+# Пример использования
+goods_list = [
+    Goods("rice", 10, 50),
+    Goods("tea", 6, 30),
+    Goods("cake", 10, 12),
+    Goods("salad", 20, 0)
+]
+
+process_goods_list(goods_list)
