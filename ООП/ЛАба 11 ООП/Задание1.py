@@ -1,59 +1,33 @@
-# Определение базового класса "Person", представляющего человека
-class Person:
-    def __init__(self, name, age):
-        # Инициализация атрибутов объекта: имя и возраст
+class Person:#создание класса человек
+    def __init__(self, name, age):#инициализация полей класса человек
         self.name = name
         self.age = age
-
-    def __str__(self):
-        # Форматированный вывод информации о человеке
-        return f"Person: {self.name}, Age: {self.age}"
-
-# Определение класса "Employee", наследующего от класса "Person" и представляющего сотрудника
-class Employee(Person):
-    def __init__(self, name, age, position, salary):
-        # Вызов конструктора базового класса "Person" с использованием super()
-        super().__init__(name, age)
-        # Инициализация атрибутов объекта: должность и зарплата
-        self.position = position
-        self.salary = salary
-
-    def __str__(self):
-        # Форматированный вывод информации о сотруднике
-        return f"Employee: {self.name}, Age: {self.age}, Position: {self.position}, Salary: {self.salary}"
-
-# Определение класса "Father", наследующего от класса "Person" и представляющего отца
-class Father(Person):
-    def __init__(self, name, age, children=None):
-        # Вызов конструктора базового класса "Person" с использованием super()
-        super().__init__(name, age)
-        # Инициализация атрибута объекта: список детей
-        self.children = ", ".join(children) if children else None
-
-    def __str__(self):
-        # Форматированный вывод информации о отце
-        return f"Father: {self.name}, Age: {self.age}, Children: {self.children}"
-
-# Определение класса "WorkingFather", наследующего одновременно от "Employee" и "Father"
-class WorkingFather(Employee, Father):
-    def __init__(self, name, age, position, salary, children=None):
-        # Явный вызов конструкторов базовых классов с использованием super()
-        Employee.__init__(self, name, age, position, salary)
-        Father.__init__(self, name, age, children)
-
-    def __str__(self):
-        # Форматированный вывод информации о работающем отце
-        return f"Working Father: {self.name}, Age: {self.age}, Position: {self.position}, Salary: {self.salary}, Children: {self.children}"
-
-# Пример использования
-person = Person("John", 30)
+    def __str__(self):#возвращает имя и возраст
+        return f'Name: {self.name}, Age: {self.age}'
+class Worker(Person):#создание класса работник
+    def __init__(self, name, age, profession):#инициализация полей класса работник
+        super().__init__(name, age)#наследование полей класса человек
+        self.profession = profession
+    def __str__(self):#возвращает имя, возраст и профессию
+        return f'Name: {self.name}, Age: {self.age}, Profession: {self.profession}'
+class Father(Person):#создание класса отец
+    def __init__(self, name, age, children=2):#инициализация полей класса отец
+        super().__init__(name, age)#наследование полей класса человек
+        self.children = children
+    def __str__(self):#возвращет имя, возраст и количество детей
+        return f'Name: {self.name}, Age: {self.age}, Children: {self.children}'
+class WorkingFather(Worker, Father):#создание класса работник-отец
+    def __init__(self, name, age, profession, children):#инициализация полей класса работник-отец
+        Worker.__init__(self, name, age, profession)#наследование полей класса работник
+        Father.__init__(self, name, age, children)#наследование полей класса отец
+    def __str__(self):#возвращает имя, возраст, профессия и кол-во детей
+        return f'Name: {self.name}, Age: {self.age}, Profession: {self.profession}, Children: {self.children}'
+#создание объектов классов и проверка работоспособности
+person = Person('John Smith', 30)
 print(person)
-
-employee = Employee("Alice", 25, "Manager", 50000)
-print(employee)
-
-father = Father("Bob", 40, ["Tom", "Emma"])
+worker = Worker('Peter Brown', 40, 'Engineer')
+print(worker)
+father = Father('Michael Johna', 46, 2)
 print(father)
-
-working_father = WorkingFather("David", 35, "Engineer", 60000, ["Sophia", "Liam"])
+working_father = WorkingFather('Roberto de Davidos', 26, 'Teacher', 1)
 print(working_father)
