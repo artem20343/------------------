@@ -1,32 +1,40 @@
 import math
 
-def calculate_rectangle_area(length, width):
-    """Вычисляет площадь прямоугольника."""
-    return length * width
+# Функция для вычисления площади прямоугольного треугольника
+def area_of_right_triangle(a, b):
+    return 0.5 * a * b
 
-def calculate_right_triangle_area(base, height):
-    """Вычисляет площадь прямоугольного треугольника."""
-    return 0.5 * base * height
+# Функция для вычисления площади прямоугольника
+def area_of_rectangle(a, b):
+    return a * b
 
-def calculate_quadrilateral_area(X, Y, Z, T):
-    """Вычисляет площадь четырехугольника."""
-    # Площадь прямоугольного треугольника (X, Y, гипотенуза)
-    triangle_area = calculate_right_triangle_area(X, Y)
+# Функция для вычисления площади квадрата
+def area_of_square(a):
+    return a * a
 
-    # Площадь прямоугольника (ширина Z, высота T)
-    rectangle_area = calculate_rectangle_area(Z, T)
+# Функция для вычисления площади четырехугольника
+def area_of_quadrilateral(x, y, z, t):
+    # Если все стороны равны, то это квадрат
+    if x == y == z == t:
+        quadrilateral_area = area_of_square(x)
+    else:
+        # Найдем площадь прямоугольного треугольника
+        triangle_area = area_of_right_triangle(x, y)
 
-    # Общая площадь четырехугольника
-    quadrilateral_area = triangle_area + rectangle_area
+        # Найдем площадь прямоугольника
+        rectangle_area = area_of_rectangle(z, t)
+
+        # Площадь четырехугольника равна сумме площадей треугольника и прямоугольника
+        quadrilateral_area = triangle_area + rectangle_area
+
     return quadrilateral_area
 
-# Входные данные: длины сторон четырехугольника
-X = float(input("Введите длину стороны X: "))
-Y = float(input("Введите длину стороны Y: "))
-Z = float(input("Введите длину стороны Z: "))
-T = float(input("Введите длину стороны T: "))
+# Ввод значений сторон четырехугольника
+x = float(input("Введите значение стороны x: "))
+y = float(input("Введите значение стороны y: "))
+z = float(input("Введите значение стороны z: "))
+t = float(input("Введите значение стороны t: "))
 
-# Вычисление площади четырехугольника
-area = calculate_quadrilateral_area(X, Y, Z, T)
-
-print("Площадь четырехугольника: {:.2f}".format(area))
+# Вычисление и вывод площади четырехугольника
+result = area_of_quadrilateral(x, y, z, t)
+print("Площадь четырехугольника:", result)
