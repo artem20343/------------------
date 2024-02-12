@@ -41,7 +41,7 @@ for item in items:
         }
 
 # Открытие файла для записи данных
-with open('currs.csv', 'w', newline='') as file:
+with open('C:\\Users\\Professional\\Desktop\\Пары\\Лабораторные работы\\GitHub\\ИПО\\Лаба 21 ИПО\\currs.csv', 'w', newline='') as file:
     # Создание объекта writer для записи данных в файл
     writer = csv.DictWriter(
         file,
