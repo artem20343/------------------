@@ -8,7 +8,7 @@ if result.status_code == 200:  # Проверка статуса ответа HT
 
     json_dict['name'] = input("Введите имя: ")  # Запрос у пользователя ввести имя, которое затем добавляется в словарь
 
-    with open("swap.json", "w") as file:  # Открытие файла "swap.json" для записи
+    with open("C:\\Users\\Professional\\Desktop\\Пары\\Лабораторные работы\\GitHub\\ИПО\\Лаба 22 ИПО\\swap.json", "w") as file:  # Открытие файла "swap.json" для записи
         json_text = json.dump(json_dict, file, indent=4)  # Сериализация словаря Python обратно в JSON и запись в файл
 
     # Дополнительно:
